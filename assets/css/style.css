@@ -29,6 +29,198 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
+/*------------Pricing-------------*/
+/* Animation */
+
+.PlanPricing {
+    margin-top:100px;
+    -moz-transition:all 0.6s ease;
+    -webkit-transition:all 0.6s ease;
+    -ms-transition:all 0.6s ease;
+    -o-transition:all 0.6s ease;
+    transition:all 0.6s ease;
+}
+.PlanPricing:hover {
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1);
+    z-index:2;
+    -moz-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow:0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.PlanPricing .planName {
+    padding-top:50px;
+    padding-bottom:10px;
+    text-align:center;
+}
+.PlanPricing .price {
+    background:#2cc76a;
+    padding:5px;
+    color:#FFF;
+    font-size:50px;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    display:block;
+    width:100px;
+    height:100px;
+    line-height:100px;
+    margin:0 auto;
+    position:relative;
+    margin-top:-107px;
+    margin-bottom:10px;
+}
+.PlanPricing.Recommended .price {
+    background:#f45c57;
+}
+.PlanPricing .planName h3 {
+    color:#FFF;
+    text-align:center;
+    padding:0;
+    margin:0;
+    text-transform:uppercase;
+}
+.PlanPricing .planName p {
+    color:#999;
+    text-align:center;
+}
+.PlanPricing .planFeatures {
+    text-align:center;
+    padding:10px;
+}
+.PlanPricing .planFeatures ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.PlanPricing .planFeatures ul li {
+    padding:13px 0;
+    list-style:none;
+}
+.PlanPricing p {
+    margin:0;
+}
+.PlanPricing .btn {
+    width:100%;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    margin:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+/*========= Price CSS==============*/
+
+
+.template4{
+    overflow:hidden;
+    
+font: 'Open Sans';
+font-size:13px;
+font-weight:300;
+position:relative;
+border-top:5px solid #1B253B;
+transition: all 1s linear 0s;
+background:#fff;
+}
+
+.template4:hover{
+    border-top:0px solid #1B253B;
+    transition: all 1s linear 0s;
+}
+
+.template4:hover > p a{
+    width:100% !important;
+    
+}
+
+.template4:hover > div span.price{
+    top:50px; !important;
+    transition: all 1s linear 0s;
+}
+
+.PlanPricing.template4 .planName h3 {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.PlanPricing.template4 .price {
+     background: none repeat scroll 0 0 #2CC76A;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: -50px auto 10px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.PlanPricing.template4 .btn {
+    border-radius: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 60%;
+    color:#fff;
+    font-size:15px;
+    padding:20px 30px;
+    background: #1B253B; /* Old browsers */
+     -webkit-transition: all 0.51s ease-in-out;
+-moz-transition: all 0.51s ease-in-out;
+-o-transition: all 0.51s ease-in-out;
+transition: all 0.51s ease-in-out;
+}
+
+.PlanPricing.template4 .btn:hover {
+   background: #1B253B !important; /* Old browsers */
+     -webkit-transition: all 0.51s ease-in-out;
+-moz-transition: all 0.51s ease-in-out;
+-o-transition: all 0.51s ease-in-out;
+transition: all 0.51s ease-in-out;
+}
+
+
+.PlanPricing.template4 > p {
+    text-align: center;
+}
+
+
+.PlanPricing.template4 .price {
+    background: none repeat scroll 0 0 #1B253B;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    position: absolute;
+    left:0;
+    top:-150px;
+    width: 100%;
+    transition: all 1s linear 0s;
+}
+
+.orange{
+    color:#fba826;  
+}
+
+.template4 .planFeatures {
+    color: #333333;
+}
+
 /* --- contact form  ---- */
 .margintop10{
     margin-top:10px;
@@ -134,64 +326,7 @@ form#commentform textarea {
     padding:0;
 }
 
-/** testimonials **/
-#testimonials {
-  display: block;
-  width: 100%;
-  margin-bottom: 40px;
-}
-#testimonials h2 {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 3px;
-}
 
-#testimonials .carousel-wrap {
-  display: block;
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-#testimonials .carousel-nav {
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-}
-#testimonials .carousel-nav img {
-  cursor: pointer;
-}
-#testimonials .carousel-nav img:active {
-  position: relative;
-  top: 1px;
-}
-#testimonials .carousel-nav .nextbtn {
-  float: right;
-}
-
-#testimonials .carousel-wrap ul {
-  display: block;
-  list-style: none;
-  position: relative;
-}
-#testimonials .carousel-wrap ul li {
-  display: block;
-  float: left;
-  position: relative;
-  width: 400px;
-  margin-right: 15px;
-}
-
-#testimonials .carousel-wrap .context {
-  font-size: 2.0em;
-  line-height: 1.45em;
-  color: #797670;
-  font-style: italic;
-  margin-bottom: 6px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #dcdcdc;
-}
 
 
 /** client logos **/
@@ -256,6 +391,11 @@ html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
  /* ----- Global ----- */
+.brand{
+    padding-top: 10px;
+    position: absolute;
+}
+
  .navbar-default .navbar-nav > li > a {
     color: #777;
     font-weight: bold;
@@ -346,7 +486,7 @@ float: right;
     padding:10px;
 }
 .current{
-    background:#55CBD2;
+    background:#E4E0D1;
 
 }
 
@@ -388,26 +528,24 @@ a:hover { color: #888; text-decoration: none; }
 
 strong { font-weight: bold; }
 
-address {
-    margin-top: 28px;
-    }
-
-
-@media (min-width: 50px) and (max-width: 988px) { 
- 
- address {
-    margin-top: 28px;
-    margin-left: 21px;
-    }
- 
+/* --- flickr --- */
+.widget .flickr_badge {
+    width:100%;
 }
-@media (min-width: 988px) and (max-width: 1200px) { 
- 
- address {
-    margin-top: 28px;
-    margin-left: -58px;
-    }
- 
+.widget .flickr_badge img { margin: 0 9px 20px 0; }
+
+footer .widget .flickr_badge {
+    width: 100%;
+}
+footer .widget .flickr_badge img {
+    margin: 0 9px 20px 0;
+}
+
+.flickr_badge img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 9px 20px 0;
 }
 
 /* --- box --- */
@@ -648,17 +786,7 @@ footer{
    background: black;
 
 }
-footer a.brand {
-    font-family: 'Pacifico', cursive;
-    font-size: 36px;
-    color:white;
-    margin-top:5px;
-    display: inline-block;
-    width: 270px;
-    height: 96px;
-    padding: 30px 10px;
-    /*background: url(../img/logo.png) 20px center no-repeat; */
-}
+
 
 
 
@@ -890,3 +1018,7 @@ footer a.brand {
             padding: 10px 0px 9px;
         }
     }
+    address {
+    margin-top: 28px;
+    margin-left: none !important;
+}
