@@ -9,26 +9,165 @@ Version:1.0.0
 License:GNU General Public License v2 or later
 License URI:http://www.gnu.org/licenses/gpl-2.0.html
 */
-/**********Testimonials**************/
 
-#w {
-  display: block;
-  width: 750px;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 45px;
+/* ----- Global ----- */
+.brand{
+    padding-top: 10px;
+    position: absolute;
 }
 
-#content {
-  display: block;
-  width: 100%;
-  background: #fff;
-  padding: 25px 20px;
-  padding-bottom: 35px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+ .navbar-default .navbar-nav > li > a {
+    color: #777;
+    font-weight: bold;
 }
+ .aligncenter{
+    text-align:center;
+}
+#slider{
+    padding-top: 30px;
+}
+ .callaction {
+    background:#f9f9f9;
+    padding:55px 0 0 0;
+    height: 120%;
+    color:#8B1B45;
+}
+.big-cta .cta {
+    padding:10px;
+}
+.cta-text {
+        margin:0 auto;
+        text-align:center;  
+    }
+ 
+.link-list{
+    margin-left: -40px;
+}
+
+.widgetheading{
+    font-size: 20px;
+    color: white;
+}
+
+ .main-content{
+    margin-top: 20px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+@media (min-width: 1068px) and (max-width: 1400px) { 
+ .post-sidebar{
+    margin-top: 15px;
+    border:1px solid #DDD;
+    padding: 5px;
+  }
+ 
+}
+@media (min-width: 750px) and (max-width: 1060px) { 
+ .post-sidebar{
+    width:204px;
+    margin-top: 15px;
+    border:1px solid #DDD;
+    padding: 5px;
+    float: right;
+
+ }
+}
+.post-sidebar{
+    margin-top: 15px;
+    border:1px solid #DDD;
+    padding: 5px;
+  
+
+ }
+.form-group{
+    
+    padding:20px;
+}
+ul li{
+    list-style: none;
+}
+h3.col-xs-12{
+    margin-top: -20px;
+
+}
+.content-space{
+    margin-top: 140px;
+}
+
+
+.btn-info{
+float: right;
+}
+
+
+.icon-space{
+    display: inline-block;
+    padding:10px;
+}
+.current{
+    background:#E4E0D1;
+
+}
+
+
+.title-text{
+  font-family: 'Raleway', sans-serif;  
+  letter-spacing: .2px;
+  font-size: 30px;
+}
+.img-pad{
+    padding-right: 23px;
+}
+.main-content{
+    margin-top: 80px;
+}
+
+
+
+.white-text{
+    color: white;
+}
+
+body {
+    font-size: 15px;
+    line-height: 24px;
+   
+}
+
+a {
+    color: #55CBD2;
+    text-decoration: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+a:hover { color: #888; text-decoration: none; }
+
+strong { font-weight: bold; }
+
+/* --- flickr --- */
+.widget .flickr_badge {
+    width:100%;
+}
+.widget .flickr_badge img { margin: 0 9px 20px 0; }
+
+footer .widget .flickr_badge {
+    width: 100%;
+}
+footer .widget .flickr_badge img {
+    margin: 0 9px 20px 0;
+}
+
+.flickr_badge img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 9px 20px 0;
+}
+
 /*------------Pricing-------------*/
 /* Animation */
 
@@ -390,163 +529,7 @@ h3.aligncenter{
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
- /* ----- Global ----- */
-.brand{
-    padding-top: 10px;
-    position: absolute;
-}
-
- .navbar-default .navbar-nav > li > a {
-    color: #777;
-    font-weight: bold;
-}
- .aligncenter{
-    text-align:center;
-}
-#slider{
-    padding-top: 30px;
-}
- .callaction {
-    background:#f9f9f9;
-    padding:55px 0 0 0;
-    height: 120%;
-    color:#8B1B45;
-}
-.big-cta .cta {
-    padding:10px;
-}
-.cta-text {
-        margin:0 auto;
-        text-align:center;  
-    }
  
-.link-list{
-    margin-left: -40px;
-}
-
-.widgetheading{
-    font-size: 20px;
-    color: white;
-}
-
- .main-content{
-    margin-top: 20px;
-    padding-bottom: 50px;
-    text-align: left;
-}
-
-@media (min-width: 1068px) and (max-width: 1400px) { 
- .post-sidebar{
-    margin-top: 15px;
-    border:1px solid #DDD;
-    padding: 5px;
-  }
- 
-}
-@media (min-width: 750px) and (max-width: 1060px) { 
- .post-sidebar{
-    width:204px;
-    margin-top: 15px;
-    border:1px solid #DDD;
-    padding: 5px;
-    float: right;
-
- }
-}
-.post-sidebar{
-    margin-top: 15px;
-    border:1px solid #DDD;
-    padding: 5px;
-  
-
- }
-.form-group{
-    
-    padding:20px;
-}
-ul li{
-    list-style: none;
-}
-h3.col-xs-12{
-    margin-top: -20px;
-
-}
-.content-space{
-    margin-top: 140px;
-}
-
-
-.btn-info{
-float: right;
-}
-
-
-.icon-space{
-    display: inline-block;
-    padding:10px;
-}
-.current{
-    background:#E4E0D1;
-
-}
-
-
-.title-text{
-  font-family: 'Raleway', sans-serif;  
-  letter-spacing: .2px;
-  font-size: 30px;
-}
-.img-pad{
-    padding-right: 23px;
-}
-.main-content{
-    margin-top: 80px;
-}
-
-
-
-.white-text{
-    color: white;
-}
-
-body {
-    font-size: 15px;
-    line-height: 24px;
-   
-}
-
-a {
-    color: #55CBD2;
-    text-decoration: none;
-    -o-transition: all .3s;
-    -moz-transition: all .3s;
-    -webkit-transition: all .3s;
-    -ms-transition: all .3s;
-}
-
-a:hover { color: #888; text-decoration: none; }
-
-strong { font-weight: bold; }
-
-/* --- flickr --- */
-.widget .flickr_badge {
-    width:100%;
-}
-.widget .flickr_badge img { margin: 0 9px 20px 0; }
-
-footer .widget .flickr_badge {
-    width: 100%;
-}
-footer .widget .flickr_badge img {
-    margin: 0 9px 20px 0;
-}
-
-.flickr_badge img {
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin: 0 9px 20px 0;
-}
 
 /* --- box --- */
 
@@ -784,8 +767,10 @@ footer{
    margin-top:40px;
    padding: 20px; 
    background: black;
+   margin-bottom: -25px;
 
 }
+
 
 
 
