@@ -28,20 +28,26 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 #slider{
     padding-top: 30px;
 }
- .callaction {
-    background:#f9f9f9;
-    padding:55px 0 0 0;
-    height: 120%;
-    color:#8B1B45;
+
+.callaction {
+    background: none repeat scroll 0% 0% #F9F9F9;
+    height: 72px;
+    color: #8B1B45;
+    margin-top: 25px;
 }
 .big-cta .cta {
     padding:5px;
 }
-.cta-text {
+.cta-text-home {
         margin:0 auto;
         text-align:center;
         margin-bottom: -62px;  
     }
+.cta-text {
+        margin:0 auto;
+        text-align:center; 
+    }    
+
  
 .link-list{
     margin-left: -40px;
