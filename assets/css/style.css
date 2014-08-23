@@ -380,6 +380,11 @@ transition: all 0.51s ease-in-out;
 }
 
 /* --- contact form  ---- */
+.bg-contact{
+    background:url(../img/slider/image2.jpg);
+    width: 100%;
+    padding: 20px;
+}
 .margintop10{
     margin-top:10px;
 }
@@ -779,6 +784,7 @@ a:hover { text-decoration:none; }
     padding-left: 43px;
 
 }
+
 .video-post{
     margin-top: 40px;
 }
