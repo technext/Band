@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-portfolio.css">
     
 
@@ -144,64 +145,72 @@
             <div class="box">
               <div class="box-gray aligncenter">
                 <h4>Fully responsive</h4>
-                <div class="icon">
+                <div class="icon animated">
                 <i class="fa fa-desktop fa-3x"></i>
                 </div>
                 <p>
                  Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
                 </p>
               </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
+              <a href="#">
+                <div class="box-bottom">
+                  Learn more
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-xs-12 col-sm-6">
             <div class="box">
               <div class="box-gray aligncenter">
                 <h4>Modern Style</h4>
-                <div class="icon">
+                <div class="icon animated">
                 <i class="fa fa-pagelines fa-3x"></i>
                 </div>
                 <p>
                  Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
                 </p>
               </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
+              <a href="#">
+                <div class="box-bottom">
+                  Learn more
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-xs-12 col-sm-6">
             <div class="box">
               <div class="box-gray aligncenter">
                 <h4>Customizable</h4>
-                <div class="icon">
+                <div class="icon animated">
                 <i class="fa fa-edit fa-3x"></i>
                 </div>
                 <p>
                  Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
                 </p>
               </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
+              <a href="#">
+                <div class="box-bottom">
+                  Learn more
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-lg-3 col-xs-12 col-sm-6">
             <div class="box">
               <div class="box-gray aligncenter">
                 <h4>Valid HTML5</h4>
-                <div class="icon">
+                <div class="icon animated">
                 <i class="fa fa-code fa-3x"></i>
                 </div>
                 <p>
                  Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
                 </p>
               </div>
-              <div class="box-bottom">
-                <a href="#">Learn more</a>
-              </div>
+              <a href="#">
+                <div class="box-bottom">
+                  Learn more
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -312,5 +321,14 @@
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/carousels.js"></script>
+    <script>
+
+  $(".icon").hover(function () {
+    $(this).children("i").addClass("animated zoomIn");
+ }, function(){
+  $(this).children("i").removeClass("animated zoomIn");
+ });
+
+</script>
   </body>
 </html>

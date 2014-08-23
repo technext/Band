@@ -11,10 +11,18 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 /* ----- Global ----- */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url(http://fonts.gstatic.com/s/lobster/v9/MWVf-Rwh4GLQVBEwbyI61Q.woff) format('woff');
+}
 .brand{
+    font-family: "Lobster";
     padding-top: 10px;
     position: absolute;
     color: rgba(151, 157, 159, 1);
+    font-size: 38px;
 }
 
  .navbar-default .navbar-nav > li > a {
@@ -39,9 +47,12 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     padding:5px;
 }
 .cta-text-home {
+        font-family: Lobster;
+        letter-spacing: 2.9px;
         margin:0 auto;
         text-align:center;
-        margin-bottom: -62px;  
+        margin-bottom: -62px; 
+
     }
 .cta-text {
         margin:0 auto;
@@ -86,9 +97,8 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
     margin-top: 15px;
     border:1px solid #DDD;
     padding: 5px;
-  
-
  }
+
 .form-group{
     
     padding:20px;
@@ -567,11 +577,16 @@ html[xmlns] .clearfix { display: block; }
 }
 .box-bottom {
     background: none repeat scroll 0% 0% #68A4C4;
-}
-.box-bottom {
+    color: white;
+    font-weight: bold;
+    letter-spacing: .2px;
     padding: 20px 0px;
     text-align: center;
+    transition: background-color 0.5s ease;
 }
+.box-bottom:hover{
+ background: none repeat scroll 0% 0% rgba(31, 62, 78, 1);   
+ }
 
 
 
@@ -632,14 +647,17 @@ html[xmlns] .clearfix { display: block; }
     text-align: left;
 }
 
+
+
 .header a.brand {
+
     float: left;
     font-size: 40px;
     margin-top:5px;
     display: inline-block;
     width: 270px;
     height: 96px;
-    /*background: url(../img/logo.png) 20px center no-repeat; */
+    /* background: url(../images/logo.png) 20px center no-repeat; */
 }
 @media (min-width: 50px) and (max-width: 768px) { 
         .header a.brand {
@@ -741,11 +759,35 @@ a:hover { text-decoration:none; }
     color: #FFF;
     background: #5BC0DE;
 }
+.post-icon {
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    left: -72px;
+    top: 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.lead-text{
+    margin-top: 20px;
+    font-size: 16px;
+    letter-spacing: .2px;
+    line-height: 25px;
+    padding-left: 43px;
+
+}
+.video-post{
+    margin-top: 40px;
+}
+.author-blog{padding: 43px;}
 .post { border-bottom:1px solid #5BC0DE }
-.post-title {  color:#5BC0DE; font-size: 24px; font-family: "lato"; }
+.post-title { margin: 20px 0px 20px 0; color:#5BC0DE; font-size: 34px; font-family: "lato"; }
 .post .glyphicon { margin-right:5px; }
 .post-header-line { border-top:1px solid #DDD;border-bottom:1px solid #DDD;padding:5px 0px 5px 15px;font-size: 12px; }
-.post-content { padding-bottom: 15px;padding-top: 15px;}
+.post-content { padding-bottom: 15px;}
 
 .btn-sm{
     margin-left: 21px;
