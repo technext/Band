@@ -11,6 +11,10 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 /* ----- Global ----- */
+.firsttwo{
+    display: hidden;
+}
+
 @font-face {
   font-family: 'Lobster';
   font-style: normal;
