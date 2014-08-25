@@ -24,15 +24,10 @@ License URI:http://www.gnu.org/licenses/gpl-2.0.html
 .brand{
     font-family: "Lobster";
     padding-top: 10px;
-    position: absolute;
-    color: rgba(151, 157, 159, 1);
+    color: white;
     font-size: 38px;
 }
 
- .navbar-default .navbar-nav > li > a {
-    color: #777;
-    font-weight: bold;
-}
  .aligncenter{
     text-align:center;
     margin: 0 auto;
@@ -129,7 +124,7 @@ float: right;
     padding:10px;
 }
 .current{
-    background:#E4E0D1;
+    background:black;
 
 }
 
@@ -600,36 +595,175 @@ html[xmlns] .clearfix { display: block; }
 
 
 /* ----- Header ----- */
-.navbar-nav{
-    margin-top: 25px;
-    
-}
+/* Navigation */
 
-.navbar-collapse {
-    max-height: 340px;
-    overflow-x: visible;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-top:none !important;
-    box-shadow: none !important);
-    float: left;
+      
+@media only screen and (max-width: 970px){
+         #navigation{
+        position: fixed;
+        width: 100%;
+        height: 75px;
+        z-index: 1031;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
     }
+    }
+
+    @media only screen and (min-width: 970px){
+         #navigation{
+        width: 100%;
+        height: 75px;
+        z-index: 1031;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    }
+
+    .visible-nav{
+        top:0;
+    }
+
+    .dark-nav{
+        background:#A70534;
+        box-shadow: 0px 1px 4px rgba(0,0,0, 0.5);
+        -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.5);
+        -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.5);
+        margin-bottom: 20px;
+    }
+
+    .nav-inner{
+        width:100%;
+        max-width: 1170px;
+        height: 100%;
+        margin:0 auto;
+    }
+
+    .nav-inner:after{
+        clear: both;
+    }
+
+/* Logo Style */
+
+    .site-logo{
+        font-size:3.5em;
+        float: left;
+        position: relative;
+        padding-top:8px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .white-nav .site-logo a.logo{
+        color:#111;
+        display: block;
+    }   
+    
+    .dark-nav .site-logo a.logo{
+        color:#fff;
+        display: block;
+    }   
+
+    .site-logo a.logo img{
+        height: auto;
+        max-height: 189px;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+    }
+
+/* Nav Menu */
+
+    #navigation .mini-nav-button{
+        color:#777;
+        display: none;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        font-size:25px;
+        position: absolute;
+        right:15px;
+        top:50%;
+        cursor: pointer;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    #navigation .mini-nav-button:hover{
+        color:#8BC3A3;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }   
+
+    .nav-menu{
+        float: right;
+        height: 100%;
+    }
+
+    .nav-menu ul.nav{
+        height: 100%;
+    }
+
+    .nav li{
+        display: inline-block;
+        height: 100%;
+    }
+
+    .nav li a{
+        display: block;
+        height: 100%;
+        line-height: 54px;
+        color: #555555;
+        font-size:1.05em;
+        font-weight:600;
+        padding:10px 8px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+/* Nav Menu Rollovers */
+
+    .dark-nav .nav li a{
+        color:#ccc;
+    }
+
+    .dark-nav .nav li a:hover{
+        background:#222;
+        color:#8BC3A3;
+    }
+    
+    .dark-nav .nav li.active a{
+        color:#8BC3A3;
+    }
+    
+    .dark-nav .nav li a:focus{
+        background:#8BC3A3;
+        color:#fff !important;
+    }   
+
+
 .banner-text{
     font-family: 'Raleway', sans-serif;
     color:white;
-    font-size: 50px;
+    font-size: 25px;
     margin-top: 16px;
 
     }
 
 #banners{
-    background:black;
-    height:120px;
+    background:#A70534;
     margin-bottom: 20px;
-    padding-top: 15px;
+    padding-top: 3px;
 }
 #banner-home{
-    background:black;
+    background:#A70534;
     height:250px;
     margin-bottom: 30px;
     padding-top: 120px;
@@ -647,9 +781,7 @@ html[xmlns] .clearfix { display: block; }
     margin-top:0px;
 }
 
-.header .navbar {
-    margin-bottom: 0;
-}
+
 
 .header h1 {
     float: left;
@@ -678,31 +810,6 @@ html[xmlns] .clearfix { display: block; }
         font-size: 37px;
      } 
  }  
-
-
-.header ul.nav {
-    padding: 52px 20px 10px 20px;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-
-.header ul.nav li a {
-    /*padding: 52px 20px 10px 20px;*/
-    text-shadow: none;
-    font-size: 14px;
-    color:white;
-}
-
-
-.header ul.nav li a i {
-    line-height: 35px;
-    
-}
-
-.header ul.nav li a:hover i { color: #fff; }
-
 .paragraph-text{
     text-align: justify;
     letter-spacing:1px;
