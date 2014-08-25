@@ -602,6 +602,7 @@ html[xmlns] .clearfix { display: block; }
 /* ----- Header ----- */
 .navbar-nav{
     margin-top: 25px;
+    
 }
 
 .navbar-collapse {
