@@ -190,7 +190,7 @@ footer .widget .flickr_badge img {
 /* Animation */
 
 .PlanPricing {
-    margin-top:100px;
+    margin-top:-10px;
     -moz-transition:all 0.6s ease;
     -webkit-transition:all 0.6s ease;
     -ms-transition:all 0.6s ease;
@@ -744,7 +744,7 @@ html[xmlns] .clearfix { display: block; }
     }
     
     .dark-nav .nav li a:focus{
-        background:#8BC3A3;
+         background:black;
         color:#fff !important;
     }   
 
