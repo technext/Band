@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-portfolio.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
     
 
     <!-- Favicon and touch icons -->
@@ -24,8 +26,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+
+
   </head>
   <body>
+
 
     <!-- Header -->
         
@@ -211,53 +217,21 @@
       </div>
     </div>
    
-
-    <!--End Main Container -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-lg-12 visible-md visible-lg">   
-          <div id="clients">
-          <h3 class="aligncenter">Past &amp; Present Clients</h3><hr>
-            <div class="clients-wrap">
-              <ul class="aligncenter" id="clients-list" class="clearfix">
-                <li><img class="img-responsive" src="images/client01-cartoon-network.png" alt="Cartoon Network"></li>
-                <li><img class="img-responsive" src="images/client02-rough-draft-studios.png" alt="Rough Draft Studios"></li>
-                <li><img class="img-responsive"  src="images/client03-spongebob-movie2.png" alt="SpongeBob Movie #2"></li>
-                <li><img class="img-responsive"  src="images/client04-apple-inc.png" alt="Apple Computers"></li>
-                <li><img class="img-responsive"  src="images/client05-google-talk.png" alt="Google chat talk"></li>
-                <li><img class="img-responsive"  src="images/client07-wonka-candy.png" alt="Wonka Chocolates and Candy"></li>
-                <li><img class="img-responsive"  src="images/client02-rough-draft-studios.png" alt="Rough Draft Studios"></li>
-                <li><img class="img-responsive"  src="images/client03-spongebob-movie2.png" alt="SpongeBob Movie #2"></li>
-              </ul>
-            </div><!-- @end .clients-wrap -->
-          </div>
-        </div>
-      </div>
-    </div>
-      <br />
-      <div class="container">
-        <div class="row">
-          <div class="hidden-md hidden-lg">   
-            <div>
+            <br />
+            <div class="container top-margin">
+            <div class="col-md-12">
             <h3 class="aligncenter">Past &amp; Present Clients</h3><hr>
-            
-              <ul class="aligncenter" id="clients-list" class="clearfix">
-                <div class="col-xs-6 col-sm-6" > 
-                <li><img class="img-responsive" src="images/client01-cartoon-network.png" alt="Cartoon Network"></li>
-                <li><img class="img-responsive" src="images/client02-rough-draft-studios.png" alt="Rough Draft Studios"></li>
-                <li><img class="img-responsive"  src="images/client03-spongebob-movie2.png" alt="SpongeBob Movie #2"></li>
-                <li><img class="img-responsive"  src="images/client04-apple-inc.png" alt="Apple Computers"></li>
-                </div><div class="col-xs-6 col-sm-6" > 
-                <li><img class="img-responsive"  src="images/client05-google-talk.png" alt="Google chat talk"></li>
-                <li><img class="img-responsive"  src="images/client07-wonka-candy.png" alt="Wonka Chocolates and Candy"></li>
-                <li><img class="img-responsive"  src="images/client02-rough-draft-studios.png" alt="Rough Draft Studios"></li>
-                <li><img class="img-responsive"  src="images/client03-spongebob-movie2.png" alt="SpongeBob Movie #2"></li>
-                </div>
-              </ul>
-            </div><!-- @end .clients-wrap -->
-          </div>
-        </div>
-      </div>
+              <div id="owl-demo" class="owl-carousel owl-carousel-bg">
+                <div class="item"><img src="images/logo2.jpg" alt="Cartoon Network"></div>
+                <div class="item"><img src="images/logo3.jpg" alt="Rough Draft Studios"></div>
+                <div class="item"><img src="images/logo4.jpg" alt="SpongeBob Movie #2"></div>
+                <div class="item"><img src="images/logo5.jpg" alt="Google chat talk"></div>
+                <div class="item"><img src="images/logo6.jpg" alt="Wonka Chocolates and Candy"></div>
+                <div class="item"><img src="images/logo7.jpg" alt="SpongeBob Movie #2"></div>
+                <div class="item"><img src="images/logo8.jpg" alt="Cartoon Network"></div>
+              </div>
+            </div> 
+          </div> 
     </div>
 
     <!-- Footer -->
@@ -312,23 +286,33 @@
       </div>
     </div>
   </footer>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/carousels.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-
     <script type="text/javascript">
-    new WOW().init();
+      new WOW().init();
+    </script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 6,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
     </script>
     <script>
 
-  $(".icon").hover(function () {
-    $(this).children("i").addClass("animated zoomIn");
- }, function(){
-  $(this).children("i").removeClass("animated zoomIn");
- });
-
-</script>
+      $(".icon").hover(function () {
+        $(this).children("i").addClass("animated zoomIn");
+     }, function(){
+      $(this).children("i").removeClass("animated zoomIn");
+     });
+    </script> 
   </body>
 </html>
