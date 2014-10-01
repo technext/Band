@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-portfolio.css">
     
 
@@ -81,8 +81,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <div class="pic-post">  
-            <div class="post-content animated fadeInLeft">
+          <div class="pic-post wow animated zoomIn" data-wow-delay=".5s">  
+            <div class="post-content">
               <a href="#">
                 <img src="assets/img/slider/image3.jpg" width="100%" alt="Icon">
               </a>
@@ -103,7 +103,7 @@
           </div> 
           <br>
           <hr>
-          <div class="video-post animated fadeInLeft">  
+          <div class="video-post wow animated zoomIn" data-wow-delay=".5s">  
             <div class="post-content">
               <iframe src="http://player.vimeo.com/video/99913972?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="100%" height="391" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <div class="post-title">
@@ -123,7 +123,7 @@
           </div>
           <br>
           <hr>
-          <div class="pic-post">  
+          <div class="pic-post wow animated zoomIn" data-wow-delay=".5s">  
             <div class="post-content">
               <a href="#">
                 <img src="assets/img/slider/image1.jpg" width="100%" alt="Icon">
@@ -170,37 +170,49 @@
             </form>
           </div>
         </div>
+
+        <div>
+      <div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active">
-                  <img src="http://placehold.it/292/16a085/FFF&text=CSS3" alt="" class="img-responsive" />
-              </div>
-              <div class="item">
-                  <img src="http://placehold.it/292/d35400/FFF&text=HTML5" alt="" class="img-responsive" />
-              </div>
-              <div class="item">
-                  <img src="http://placehold.it/292/2980b9/FFF&text=RESPONSIVE" alt="" class="img-responsive" />
-              </div>
-              <div class="item">
-                  <img src="http://placehold.it/292/8e44ad/FFF&text=BOOTSTRAP3" alt="" class="img-responsive" />
-              </div>
-            </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+      <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+           <img src="assets/img/slider/1.jpg" height="200" alt="Icon">
+          <div class="carousel-caption">
+            Band 1
           </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/slider/2.jpg" height="200" alt="Icon">
+          <div class="carousel-caption">
+            Band 2
+          </div>
+        </div>
+        <div class="item">
+           <img src="assets/img/slider/3.jpg" height="200" alt="Icon">
+          <div class="carousel-caption">
+            Band 3
+          </div>
+        </div>
+      </div>
+
+        <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
         </div>
       </div>
     </div>
@@ -211,7 +223,7 @@
     <footer> 
       <div class="container">
         <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-sm-6">
         <div class="widget">
           <h5 class="widgetheading">Get in touch with us</h5>
           <p class="white-text">
@@ -222,7 +234,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-sm-6">
         <div class="widget">
           <h5 class="widgetheading">Pages</h5>
           <ul class="link-list">
@@ -234,7 +246,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-sm-6">
         <div class="widget">
           <h5 class="widgetheading">Latest posts</h5>
           <ul class="link-list">
@@ -244,7 +256,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-sm-6">
         <div class="widget">
           <h5 class="widgetheading">Flickr photostream</h5>
           <div class="flickr_badge">
@@ -261,11 +273,12 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/carousels.js"></script>
     <script type="text/javascript" src="js/jquery.appear.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.superslides.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
+
+    <script type="text/javascript">
+    new WOW().init();
+    </script>
     
   </body>
 </html>
