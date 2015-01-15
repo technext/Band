@@ -74,6 +74,7 @@
 </div>
     <!--End Header -->
     <!-- Main Container -->
+    <div class="section-pricing">
     <div class="container">
       <div>
         <div class="PlanPricing template4 col-sm-6 col-md-3">  <!-- Price template4 Starts -->
@@ -83,21 +84,20 @@
           </div>
         <div class="planFeatures">
           <ul>
-            <li><img src="images/1.jpg"width="260" height="300"></li>
+            <li><img src="images/1.jpg" width="260" height="300" alt="image" ></li>
             <li>Pellentesque odio nisi, euismod in. Host multiple sites under one account, each with separate control panels. Starting at</li>
           </ul>
         </div>
         <p> <a href="#Signup" role="button" data-toggle="modal" class="btn btn-success btn-lg">Choose Plan </a> </p>
       </div>
-
-      <div class="PlanPricing template4 col-sm-6 col-md-3">
+      <div class="PlanPricing template4 featured-template4 col-sm-6 col-md-3">
         <div class="planName"> <span class="price">$139K</span>
-          <h3>Standard</h3>
+          <h3 class="featured-text">Featured</h3>
           <p>Monthly Plan</p>
         </div>
         <div class="planFeatures">
           <ul>
-            <li><img src="images/2.jpg" width="260" height="300"></li>
+            <li><img src="images/2.jpg" width="260" height="300" alt="image"></li>
             <li>Pellentesque odio nisi, euismod in. Host multiple sites under one account, each with separate control panels. Starting at</li>
           </ul>
         </div>
@@ -110,7 +110,7 @@
         </div>
         <div class="planFeatures">
           <ul>
-            <li><img src="images/3.jpg"  width="260" height="300"></li>
+            <li><img src="images/3.jpg"  width="260" height="300" alt="image"></li>
             <li>Pellentesque odio nisi, euismod in. Host multiple sites under one account, each with separate control panels. Starting at</li>
           </ul>
         </div>
@@ -123,7 +123,7 @@
         </div>
         <div class="planFeatures">
           <ul>
-            <li><img src="images/04.png" width="260" height="300"></li>
+            <li><img src="images/04.png" width="260" height="300" alt="image"></li>
             <li>Pellentesque odio nisi, euismod in. Host multiple sites under one account, each with separate control panels. Starting at</li>
           </ul>
         </div>
@@ -133,44 +133,48 @@
  
     <!--End Main Container -->
     <!-- Footer -->
+    </div>
     </div> 
+
+    <!-- Footer -->
+      
     <footer> 
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div class="widget">
               <h5 class="widgetheading">Get in touch with us</h5>
-              <p class="white-text">
+              
               <p class="white-text">
               <strong>Sylpha company Inc</strong><br>
                Sylphbuilding suite V124, AB 01<br>
-               Someplace 16425 Earth </p>
+               Someplace 16425 Earth
               </p>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="widget">
               <h5 class="widgetheading">Pages</h5>
-              <ul class="link-list">
+              <ol class="link-list">
                 <li><a href="#">Press release</a></li>
                 <li><a href="#">Terms and conditions</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="#">Career center</a></li>
                 <li><a href="#">Contact us</a></li>
-              </ul>
+              </ol>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="widget">
               <h5 class="widgetheading">Latest posts</h5>
-              <ul class="link-list">
+              <ol class="link-list">
                 <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
                 <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
                 <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-              </ul>
+              </ol>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 flicks">
             <div class="widget">
               <h5 class="widgetheading">Flickr photostream</h5>
               <div class="flickr_badge">
@@ -182,12 +186,44 @@
           </div>
         </div>
       </div>
-    </div>
-
   </footer>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55162400-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 6,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
+    <script>
+
+      $(".icon").hover(function () {
+        $(this).children("i").addClass("animated zoomIn");
+     }, function(){
+      $(this).children("i").removeClass("animated zoomIn");
+     });
+    </script> 
   </body>
 </html>

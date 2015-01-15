@@ -104,7 +104,7 @@
             </li>
 
             <li>
-              <time datetime="2014-07-20 0000">
+              <time datetime="2015-07-20">
                 <span class="day">8</span>
                 <span class="month">Jul</span>
                 <span class="year">2014</span>
@@ -129,7 +129,7 @@
             </li>
 
             <li>
-              <time datetime="2014-07-20 2000">
+              <time datetime="2015-07-20">
                 <span class="day">20</span>
                 <span class="month">Jan</span>
                 <span class="year">2014</span>
@@ -155,7 +155,7 @@
             </li>
 
             <li>
-              <time datetime="2014-07-31 1600">
+              <time datetime="2015-07-20">
                 <span class="day">31</span>
                 <span class="month">Jan</span>
                 <span class="year">2014</span>
@@ -186,43 +186,45 @@
     <!-- Main Container -->
     <!-- Footer -->
       
-   <footer> 
+   <!-- Footer -->
+      
+    <footer> 
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div class="widget">
               <h5 class="widgetheading">Get in touch with us</h5>
               <p class="white-text">
-              <p class="white-text">
+              
               <strong>Sylpha company Inc</strong><br>
                Sylphbuilding suite V124, AB 01<br>
-               Someplace 16425 Earth </p>
+               Someplace 16425 Earth 
               </p>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="widget">
               <h5 class="widgetheading">Pages</h5>
-              <ul class="link-list">
+              <ol class="link-list">
                 <li><a href="#">Press release</a></li>
                 <li><a href="#">Terms and conditions</a></li>
                 <li><a href="#">Privacy policy</a></li>
                 <li><a href="#">Career center</a></li>
                 <li><a href="#">Contact us</a></li>
-              </ul>
+              </ol>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="widget">
               <h5 class="widgetheading">Latest posts</h5>
-              <ul class="link-list">
+              <ol class="link-list">
                 <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
                 <li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
                 <li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-              </ul>
+              </ol>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 flicks">
             <div class="widget">
               <h5 class="widgetheading">Flickr photostream</h5>
               <div class="flickr_badge">
@@ -234,12 +236,44 @@
           </div>
         </div>
       </div>
-    </div>
-
   </footer>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"> </script>
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-    <!-- JavaScript -->
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55162400-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 6,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
+    <script>
+
+      $(".icon").hover(function () {
+        $(this).children("i").addClass("animated zoomIn");
+     }, function(){
+      $(this).children("i").removeClass("animated zoomIn");
+     });
+    </script> 
   </body>
 </html>
