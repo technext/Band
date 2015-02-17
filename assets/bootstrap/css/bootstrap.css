@@ -13,6 +13,9 @@ html {
 body {
   margin: 0;
 }
+.dark-nav .nav li a:focus {
+color: aliceblue !important;
+}
 article,
 aside,
 details,
